@@ -1,0 +1,77 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+}
+
+:root {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    background-color: rgb(27, 27, 94);
+}
+
+#page {
+    font-family: Poppins;
+    max-width: 1200px;
+    margin-inline: auto;
+}
+
+header {
+    padding-block: 30px;
+    text-align: center;
+}
+
+fieldset {
+    padding: 2rem;
+    border-radius: 1rem;
+    margin-bottom: 3rem;
+}
+
+fieldset div {
+    margin-bottom: 1rem;
+
+    label {
+        display: block;
+        margin-bottom: .5rem;
+    }
+
+    input {
+        padding: 1rem;
+        border-radius: 1rem;
+        border: none;
+        outline: none;
+        color: rgb(0, 0, 0);
+    }
+
+    input:focus {
+        outline: .2rem solid #4a4a4a;
+    }
+
+    input::placeholder {
+        color: rgba(0, 0, 0, 0.3);
+    }
+
+    input[type=checkbox] + label,
+    input[type=radio] + label {
+        outline: none;
+        
+    }
+
+    input[type=checkbox] + label,
+    input[type=radio] + label {
+        display: inline;
+
+    }
+
+
+    @media(max-width: 600px){
+        body {
+            padding-inline: 1rem;
+        }
+    }
+
+}

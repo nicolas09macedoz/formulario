@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./assets/writing-form-icon-outline-user-online-form-vector.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <title>Formulário de Cadastro</title>
+</head>
+<body>
+    <div id="page">
+        <header>
+            <h1>Formulário de Cadastro</h1>
+        </header>
+    
+        <main>
+            <form>
+                <fieldset>
+                    <legend>Informações Pessoais</legend>
+    
+                    <div>
+                        <label for="nome">Nome Completo:</label>
+                        <input type="text" placeholder="Digite seu nome..." id="nome" maxlength="10" required>
+                    </div>
+    
+                    <div>
+                        <label for="cpf">CPF:</label>
+                        <input type="number" placeholder="Digite Seu CPF" id="cpf" required>
+                    </div>
+    
+                    <div>
+                        <label for="email">E-mail:</label>
+                        <input type="email" placeholder="Digite Seu E-mail" id="email" required>
+                    </div>
+    
+                    <div>
+                        <label for="senha">Senha:</label>
+                        <input type="password" placeholder="Digite Uma Senha" id="senha" required>
+                    </div>
+    
+                    <div>
+                        <label for="data-nascimento">Data de nascimento:</label>
+                        <input type="date" id="data-nascimento">
+                    </div>
+    
+                    <div>
+                        <label for="foto">Foto de Perfil</label>
+                        <input type="file" name="" id="foto" accept=".jpg,.png,.jpeg">
+                    </div>
+                </fieldset>
+    
+                <fieldset>
+                    <legend>Gostos pessoais e tamanhos de camiseta/tênis</legend>
+    
+                    <div>
+                        <label for="cor-preferida">Cor Preferida:</label>
+                        <input type="color" id="cor-preferida">
+                    </div>
+    
+                    
+                    <div>
+                        <h2>Gosto Musical (marque os estilos que você gosta):</h2>
+    
+    
+                        <div>
+                            <input type="checkbox" name="" id="pop">
+                            <label for="pop">Pop</label>
+                        </div>
+    
+                        <div>
+                            <input type="checkbox" name="" id="funk">
+                            <label for="funk">Funk</label>
+                        </div>
+    
+                        <div>
+                            <input type="checkbox" name="" id="rap">
+                            <label for="rap">Rap</label>
+                        </div>
+    
+                        <div>
+                            <h2>Você prefere doce, salgado ou dois?</h2>
+                        </div>
+                        <div>
+                            <input type="radio" id="doce">
+                            <label for="doce">Doce</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="salgado">
+                            <label for="salgado">Salgado</label>
+                        </div>
+                    </div>
+                </fieldset>
+    
+                <button>Enviar</button>
+            </form>
+        </main>
+    </div>
+</body>
+</html>
