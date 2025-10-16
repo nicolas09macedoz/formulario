@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    color: white;
+    font-family: "Comfortaa", sans-serif;
 }
 
 :root {
@@ -11,17 +11,17 @@
 
 body {
     font-size: 1.6rem;
-    background-color: rgb(27, 27, 94);
+    background: oklch(43.659% 0.01489 122.149);
+    color: #FFF;
 }
 
 #page {
-    font-family: Poppins;
-    max-width: 1200px;
+    max-width: 120rem;
     margin-inline: auto;
 }
 
 header {
-    padding-block: 30px;
+    padding-block: 3rem;
     text-align: center;
 }
 
@@ -44,34 +44,53 @@ fieldset div {
         border-radius: 1rem;
         border: none;
         outline: none;
-        color: rgb(0, 0, 0);
+        color: oklch(0% 0 0);
     }
 
     input:focus {
-        outline: .2rem solid #4a4a4a;
+        outline: .2rem solid oklch(0% 0 0);
     }
 
     input::placeholder {
-        color: rgba(0, 0, 0, 0.3);
+        color: oklch(0% 0 0);
     }
 
-    input[type=checkbox] + label,
-    input[type=radio] + label {
+input[type=checkbox],
+input[type=radio] {
         outline: none;
-        
     }
 
-    input[type=checkbox] + label,
-    input[type=radio] + label {
+input[type=checkbox] + label,
+input[type=radio] + label {
         display: inline;
-
     }
 
-
-    @media(max-width: 600px){
-        body {
-            padding-inline: 1rem;
-        }
+select {
+        padding: 1rem;
+        border-radius: 1rem;
+        outline: none;
     }
+}
 
+button {
+    padding: 1rem;
+    width: 10rem;
+    margin-bottom: 2rem;
+    border-radius: 1rem;
+    border: none;
+    background: oklch(52.658% 0.26393 262.96);
+    color: #fff;
+    font-weight: 700;
+}
+
+button:hover {
+    cursor: pointer;
+    background: oklch(14.426% 0.08326 278.955);
+    transition: background .4s;
+}
+
+@media(max-width: 600px) {
+    body {
+        padding-inline: 1rem;
+    }
 }

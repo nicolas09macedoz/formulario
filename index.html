@@ -6,8 +6,8 @@
     <link rel="shortcut icon" href="./assets/writing-form-icon-outline-user-online-form-vector.jpg" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap" rel="stylesheet">
     <title>Formulário de Cadastro</title>
 </head>
 <body>
@@ -84,12 +84,31 @@
                             <h2>Você prefere doce, salgado ou dois?</h2>
                         </div>
                         <div>
-                            <input type="radio" id="doce">
+                            <input type="radio" id="doce" name="preferencia">
                             <label for="doce">Doce</label>
                         </div>
                         <div>
-                            <input type="radio" id="salgado">
+                            <input type="radio" id="salgado" name="preferencia">
                             <label for="salgado">Salgado</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="ambos" name="preferencia">
+                            <label for="ambos">Ambos</label>
+                        </div>
+
+                        <br>
+
+                        <div>
+                            <label for="">Tamanho da Camiseta:</label>
+                            <select name="" id="">
+                                <option disabled>Selecione um tamanho.....</option>
+                                <option value="pp">PP</option>
+                                <option value="p">P</option>
+                                <option value="m">M</option>
+                                <option value="g">G</option>
+                                <option value="gg">GG</option>
+                                <option value="exg">EXG</option>
+                            </select>
                         </div>
                     </div>
                 </fieldset>
